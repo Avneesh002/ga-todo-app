@@ -3,11 +3,12 @@ name: Github action manually
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
-  if-token: write
+  id-token: write
 
 jobs:
   build:
